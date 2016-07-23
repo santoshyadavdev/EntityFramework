@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentApp.DAL", "StudentAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentApp.Model", "StudentApp.Model\StudentApp.Model.csproj", "{EC491BE6-9881-4698-8CE6-98C4204073FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentApp.Repository", "StudentApp.Repository\StudentApp.Repository.csproj", "{506072AB-D0BD-4DB7-9420-17D61E9E9B93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentApp.Service", "StudentApp.Service\StudentApp.Service.csproj", "{8094F138-18C0-44A7-9987-F67FEA0332C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{EC491BE6-9881-4698-8CE6-98C4204073FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC491BE6-9881-4698-8CE6-98C4204073FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC491BE6-9881-4698-8CE6-98C4204073FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{506072AB-D0BD-4DB7-9420-17D61E9E9B93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{506072AB-D0BD-4DB7-9420-17D61E9E9B93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{506072AB-D0BD-4DB7-9420-17D61E9E9B93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{506072AB-D0BD-4DB7-9420-17D61E9E9B93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8094F138-18C0-44A7-9987-F67FEA0332C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8094F138-18C0-44A7-9987-F67FEA0332C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8094F138-18C0-44A7-9987-F67FEA0332C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8094F138-18C0-44A7-9987-F67FEA0332C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
