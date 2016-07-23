@@ -1,6 +1,5 @@
 ﻿using StudentApp.Model;
 using StudentApp.Service.Interface;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 
@@ -8,9 +7,7 @@ namespace StudentApp.Controllers
 {
     public class StudentController : Controller
     {
-
-        private IStudentService _service;
-        
+        private IStudentService _service;      
         public StudentController(IStudentService service)
         {
             this._service = service;
@@ -27,6 +24,5 @@ namespace StudentApp.Controllers
         {
             return await _service.Add(student);
         }
-
     }
 }

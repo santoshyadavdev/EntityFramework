@@ -1,10 +1,9 @@
-using System;
 using Microsoft.Practices.Unity;
-using Microsoft.Practices.Unity.Configuration;
+using StudentApp.Repository;
+using StudentApp.Repository.Interface;
 using StudentApp.Service;
 using StudentApp.Service.Interface;
-using StudentApp.Repository.Interface;
-using StudentApp.Repository;
+using System;
 
 namespace StudentApp.App_Start
 {
