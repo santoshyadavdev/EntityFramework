@@ -1,32 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
+﻿using StudentApp.Model;
+using StudentApp.Service.Interface;
 using System.Threading.Tasks;
-using System.Web.Http;
-using StudentApp.Model;
-using StudentApp.DAL;
+using System.Web.Mvc;
 
 namespace StudentApp.Controllers
 {
-    public class StudentController : ApiController
+    public class StudentController : Controller
     {
-        private StudentDataStore _store = new StudentDataStore();
-        public async Task<List<Student>> Get()
+        private IStudentService _service;      
+        public StudentController(IStudentService service)
         {
-            return await _store.GetStudentList();
+            this._service = service;
         }
 
+        [HttpGet]
+        public async Task<JsonResult> Get()
+        {
+            return Json(await _service.Get(), JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpPost]
         public async Task<bool> Post(Student student)
         {
-            return await _store.AddStudent(student);
+            return await _service.Add(student);
         }
-
-        public async Task<bool> Put(Student student)
-        {
-            return await _store.UpdateStudent(student);
-        }
-
     }
 }
